@@ -1,0 +1,59 @@
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.list-item {
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+
+  cursor: pointer;
+
+  &.active {
+    background-color: royalblue;
+  }
+
+  &:hover {
+    color: rgb(226, 59, 198);
+  }
+
+  h5 {
+    margin-bottom: 0.25rem;
+  }
+  
+   
+  h5, small {
+    pointer-events: none;
+  }
+}
+
+
+
+
+
+
+.modal-body {
+  .alert {
+    display: none;
+  }
+} 
+
+.modal-body .invalid{
+  input:invalid{
+    border-color: red;
+    & ~ .alert {
+      display: block;      
+    }
+  }  
+}
+
+.modal-body .invalid {
+  textarea:invalid {
+    border-color: red;
+    & ~ .alert {
+      display: block;
+    }
+  }
+}

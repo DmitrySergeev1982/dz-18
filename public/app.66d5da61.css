@@ -1,0 +1,44 @@
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.list-item {
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+  cursor: pointer;
+}
+.list-item.active {
+  background-color: royalblue;
+}
+.list-item:hover {
+  color: #e23bc6;
+}
+.list-item h5 {
+  margin-bottom: 0.25rem;
+}
+.list-item h5, .list-item small {
+  pointer-events: none;
+}
+
+.modal-body .alert {
+  display: none;
+}
+
+.modal-body .invalid input:invalid {
+  border-color: red;
+}
+.modal-body .invalid input:invalid ~ .alert {
+  display: block;
+}
+
+.modal-body .invalid textarea:invalid {
+  border-color: red;
+}
+.modal-body .invalid textarea:invalid ~ .alert {
+  display: block;
+}
+
+/*# sourceMappingURL=app.66d5da61.css.map */
